@@ -31,13 +31,13 @@ function Mobiles(props) {
                             setBlur('blur')
                         }}>
                         <div className="product-container"> 
-                            <img src={list.Img} />
+                            <img src={list.Img} alt="mobiles"/>
                             <h2>{list.Name}</h2>
                         </div> 
                         </div>
                         {showpopup &&<div className="popup">
                                <div className="popup-container">
-                                  <img className="popupContent" id="popupimg" src={img} width={200} />
+                                  <img className="popupContent" id="popupimg" src={img} width={200} alt="mobiles"/>
                                   <div className="popupContent">
                                     <h2>{name}</h2>
                                     <h3>{price}</h3>
