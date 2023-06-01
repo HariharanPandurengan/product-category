@@ -6,8 +6,8 @@ function Tablets(props) {
 
     const [img,setImg] = useState()
     const [price,setPrice] = useState()
-    const [width,setWidth] = useState()
-    const [height,setHeight] = useState()
+    // const [width,setWidth] = useState()
+    // const [height,setHeight] = useState()
     const [discription,setDiscription] = useState()
     const [name,setName] = useState()
     const [showpopup,setShowpopup] = useState(false)
@@ -22,8 +22,8 @@ function Tablets(props) {
                     <>
                         <div className="product-width" id={blur} onClick={()=>{
                              setImg(list.Img)
-                             setWidth(list.width)
-                             setHeight(list.height)
+                            //  setWidth(list.width)
+                            //  setHeight(list.height)
                              setPrice(list.Price)
                              setName(list.Name)
                              setDiscription(list.Popup)
@@ -31,13 +31,13 @@ function Tablets(props) {
                              setBlur('blur')
                         }}>
                         <div className="product-container"> 
-                            <img src={list.Img} width={list.width} height={list.height} />
+                            <img src={list.Img} width={list.width} height={list.height} alt="tablets"/>
                             <h2>{list.Name}</h2>
                         </div> 
                         </div>
                         {showpopup &&<div className="popup">
                                <div className="popup-container">
-                                  <img className="popupContent" id="popupimg" src={img} width={200} />
+                                  <img className="popupContent" id="popupimg" src={img} width={200} alt="tablets" />
                                   <div className="popupContent">
                                     <h2>{name}</h2>
                                     <h3>{price}</h3>

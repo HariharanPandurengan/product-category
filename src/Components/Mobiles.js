@@ -6,8 +6,8 @@ function Mobiles(props) {
     
     const [img,setImg] = useState()
     const [price,setPrice] = useState()
-    const [width,setWidth] = useState()
-    const [height,setHeight] = useState()
+    // const [width,setWidth] = useState()
+    // const [height,setHeight] = useState()
     const [discription,setDiscription] = useState()
     const [name,setName] = useState()
     const [showpopup,setShowpopup] = useState(false)
@@ -15,14 +15,15 @@ function Mobiles(props) {
 
     return ( 
         <section>
+            <h2>Mobiles</h2>
             <div className="product-div">
                 {
                     props.mobiles.map((list)=>
                     <>
                         <div className="product-width" id={blur} onClick={()=>{
                             setImg(list.Img)
-                            setWidth(list.width)
-                            setHeight(list.height)
+                            // setWidth(list.width)
+                            // setHeight(list.height)
                             setPrice(list.Price)
                             setName(list.Name)
                             setDiscription(list.Popup)
