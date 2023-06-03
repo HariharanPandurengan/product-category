@@ -76,7 +76,8 @@ function App() {
       Img : "https://m.media-amazon.com/images/I/51i+LdztEBL._AC_UY218_.jpg",
       Popup : "Description: Digital noise cancelling: Industry leading Active Noise Cancellation (ANC) lends a personalized, virtually soundproof experience at any situation;Voice assistant: Alexa, Google Assistant & Siri enabled (In-built) for voice access to music, information and more. Activate with a simple touch Speak-to-chat: Headphones use an array of smart technologies to create a seamless, hands-free listening experience.",
       Price : "₹1,899",
-      Type : "headphone"
+      Type : "headphone",
+      height:"250",
     },
     {
       Name : "Sony MaxBook",

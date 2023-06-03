@@ -7,7 +7,7 @@ function Headphones(props) {
     const [img,setImg] = useState()
     const [price,setPrice] = useState()
     // const [width,setWidth] = useState()
-    // const [height,setHeight] = useState()
+    const [height,setHeight] = useState()
     const [discription,setDiscription] = useState()
     const [name,setName] = useState()
     const [showpopup,setShowpopup] = useState(false)
@@ -23,7 +23,7 @@ function Headphones(props) {
                         <div className="product-width" id={blur} onClick={()=>{
                                    setImg(list.Img)
                                     // setWidth(list.width)
-                                    // setHeight(list.height)
+                                    setHeight(list.height)
                                     setPrice(list.Price)
                                     setName(list.Name)
                                     setDiscription(list.Popup)
@@ -37,7 +37,7 @@ function Headphones(props) {
                         </div>
                         {showpopup &&<div className="popup">
                         <div className="popup-container">
-                            <img className="popupContent" id="popupimg" src={img} width={200} alt="headphones" />
+                            <img className="popupContent" id="popupimg" src={img} width={200} height={height} alt="headphones" />
                             <div className="popupContent">
                                 <h2>{name}</h2>
                                 <h3>{price}</h3>
