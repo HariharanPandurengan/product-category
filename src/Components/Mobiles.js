@@ -15,7 +15,6 @@ function Mobiles(props) {
 
     return ( 
         <section>
-            <h2>Mobiles</h2>
             <div className="product-div">
                 {
                     props.mobiles.map((list)=>

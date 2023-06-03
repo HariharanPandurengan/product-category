@@ -33,7 +33,10 @@ function Allproducts(props) {
                                     <h2>{list.Name}</h2>
                                 </div> 
                             </div>
-                           {showpopup &&<div className="popup">
+                        </>
+                        )
+                    }  
+                    {showpopup &&<div className="popup">
                                <div className="popup-container">
                                   <img className="popupContent" id="popupimg" src={img} width={200} alt="allpropucts" />
                                   <div className="popupContent">
@@ -46,11 +49,8 @@ function Allproducts(props) {
                                         }}>x</h3>
                                   </div>
                                </div>
-                            </div>
+                             </div>
                             }
-                        </>
-                        )
-                    }  
                 </div>
             </section>
          );

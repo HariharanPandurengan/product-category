@@ -8,7 +8,7 @@ function Navbar() {
   const [show,setShow] = useState(false);
 
     return ( 
-      <section style={{backgroundColor:"aquamarine",position:"relative"}}>
+      <section className="navSection">
         <div id="Nav-maxwidth">
             <div><h1>My Shop</h1></div>
             <div id="link-div">
